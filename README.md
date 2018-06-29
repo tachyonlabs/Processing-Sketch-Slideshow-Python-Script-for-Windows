@@ -5,8 +5,8 @@
 I'm a volunteer at the [Idea Fab Labs](https://santacruz.ideafablabs.com/) maker/hacker/artspace here in Santa Cruz, 
 and when I came in for my shift today, I was surprised to see a giant (six feet tall? I should have measured) glossy 
 black monolith, with most of the front being a giant display, and with a Windows computer somehow built into it. I 
-don't know where it came from, or what it had been doing in a previous life, but I was asked to write a script that 
-would continuously cycle through and display all the Processing graphics and animations sketches in a sketchbook 
+don't know where it came from, or what it had been doing in a previous life, but I was asked to write a script for it 
+that would continuously cycle through and display all the Processing graphics and animations sketches in a sketchbook 
 network folder, joining the Raspberry Pi Instagram [Slideshow](https://github.com/tachyonlabs/raspberry_pi_instagram_slideshow) 
 and [Slide and Video Show](https://github.com/tachyonlabs/raspberry_pi_slide_and_video_show) installations I had 
 previously done, in providing cool giant video displays for IFL open houses and other events, and making it easy for 
@@ -49,7 +49,7 @@ you like you can make a desktop shortcut or Windows menu entry to automatically 
 Processing directory when you click or select it.
 
 #### You'll probably want to edit your sketches to make them full screen if they aren't already
-IMHO randomly-sized sketches popping up doesn't make for the greatest=looking slideshow. What you would want to do 
+IMHO randomly-sized sketches popping up doesn't make for the greatest-looking slideshow. What you would want to do 
 about that depends on whether you're using a 2D or 3D renderer:
 * *For a 2D renderer*, the first line below the line `void setup() {` in your sketch should be `fullScreen();`, and you 
 should comment out your `size` line.
