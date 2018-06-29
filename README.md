@@ -10,12 +10,12 @@ would continuously cycle through and display all the Processing graphics and ani
 network folder, joining the Raspberry Pi Instagram [Slideshow](https://github.com/tachyonlabs/raspberry_pi_instagram_slideshow) 
 and [Slide and Video Show](https://github.com/tachyonlabs/raspberry_pi_slide_and_video_show) installations I had 
 previously done, in providing cool giant video displays for IFL open houses and other events, and making it easy for 
-members to add their artworks to the show by copying their sketches into the sketchbook.
+members to add their artworks to the slideshow by copying their sketches into the sketchbook.
 
 ## What you need to do to run the script
 
 #### The script as-is requires Windows
-I tested the script on systems running Windows 7 and Windows 10, but the operative word here is **Windows**. If 
+I tested the script on systems running Windows 7 and Windows 10, but the operative word here is *Windows*. If 
 you're running on another OS the general idea should be the same, but you'll need to look up and modify the commands 
 it uses both to launch Processing with a sketch at the command line, and to terminate that process after moving on to 
 the next sketch.
@@ -31,11 +31,11 @@ Processing installed on your computer, you will need to install it, by visiting
 [https://processing.org/download/](https://processing.org/download/). 
 
 #### Copy the `processing.py` script to your Processing directory
-Copy the script [`processing.py`]() from this repo to your Processing directory -- the directory that has the files 
+Copy the script [`processing.py`](https://github.com/tachyonlabs/Processing-Sketch-Slideshow-Python-Script-for-Windows/blob/master/processing.py) from this repo to your Processing directory -- the directory that has the files 
 `processing.exe` and `processing-java.exe` (among others) in it.
 
 #### Configure the script with the location of your sketchbook
-* Run Processing.exe and select Preferences in the File pull-down menu to copy the location of your sketchbook. Then 
+Run Processing.exe and select `Preferences` in the `File` pull-down menu to copy the location of your sketchbook. Then 
 replace "your sketchbook location here" in this line in the script -- `SKETCHBOOK_DIRECTORY = "your sketchbook location 
 here"` -- with your sketchbook location.
 
