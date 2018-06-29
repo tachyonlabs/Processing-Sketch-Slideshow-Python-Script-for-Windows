@@ -16,7 +16,7 @@ while True:
     # keep a reference to the current sketch subprocess so we can shut it down after starting the next one
     if sketch:
         prev = sketch
-    next_sketch = sketches[idx % len(sketches)]
+    next_sketch = sketches[idx]
 
     # open the next sketch with Processing
     sketch = subprocess.Popen('processing-java --sketch="{}/{}/build" --output="{}/{}/build/output" --force --run'.format(SKETCHBOOK_DIRECTORY, next_sketch, SKETCHBOOK_DIRECTORY, next_sketch))
@@ -25,8 +25,8 @@ while True:
     # close the previous sketch behind the scenes
     # it seems a little extreme, but I had no luck with things like os.kill(), sketch.terminate(), etc. under Windows
     if prev:
-        subprocess.call(['taskkill', '/F', '/T', '/PID', str(prev.pid)])
+        subprocess.call(['taskkill', '/F', '/T', '/PID', str(prev.pid)], stdout=open(os.devnull, 'wb'), stderr=open(os.devnull, 'wb'))
 
     time.sleep(SECONDS_TO_DISPLAY_EACH_SKETCH - SECONDS_BEFORE_CLOSING_PREVIOUS_SKETCH)
     # and on to the next sketch in the list
-    idx += 1
+    idx = (idx + 1) % len(sketches)
