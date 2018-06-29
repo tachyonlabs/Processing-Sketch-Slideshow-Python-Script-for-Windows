@@ -3,7 +3,8 @@ import time
 import os
 import random
 
-SKETCHBOOK_DIRECTORY = "your sketchbook location here"
+#SKETCHBOOK_DIRECTORY = "your sketchbook location here"
+SKETCHBOOK_DIRECTORY = "F:\processing-3.3.7\sketchbook"
 SECONDS_BEFORE_CLOSING_PREVIOUS_SKETCH = 15
 SECONDS_TO_DISPLAY_EACH_SKETCH = 30
 SORT_RANDOM_ORDER, SORT_ALPHABETICAL_ORDER, SORT_DIRECTORY_ORDER = 0, 1, 2

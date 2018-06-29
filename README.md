@@ -9,8 +9,11 @@ don't know where it came from, or what it had been doing in a previous life, but
 that would continuously cycle through and display all the Processing graphics and animations sketches in a sketchbook 
 network folder, joining the Raspberry Pi Instagram [Slideshow](https://github.com/tachyonlabs/raspberry_pi_instagram_slideshow) 
 and [Slide and Video Show](https://github.com/tachyonlabs/raspberry_pi_slide_and_video_show) installations I had 
-previously done, in providing cool giant video displays for IFL open houses and other events, and making it easy for 
+previously done in providing cool giant video displays for IFL open houses and other events, and making it easy for 
 members to add their artworks to the slideshow by copying their sketches into the sketchbook.
+
+BTW, I had never used/run Processing before this (though I had heard of it), and now I want to do at least one sketch 
+of my own to copy into the IFL sketchbook next week, so I can have some art in the slideshow myself. :-)
 
 ## What you need to do to run the script
 
@@ -39,6 +42,11 @@ Run Processing.exe and select `Preferences` in the `File` pull-down menu to copy
 replace "your sketchbook location here" in this line in the script -- `SKETCHBOOK_DIRECTORY = "your sketchbook location 
 here"` -- with your sketchbook location.
 
+#### Configure the sketch display order, if you like
+By default the script displays sketches in random order (good both for variety in general, and also for if you have a 
+bunch of sketches with similar names that are variations of each other), but if you like you can set the 
+`DISPLAY_ORDER` variable to `SORT_ALPHABETICAL_ORDER` or `SORT_DIRECTORY_ORDER` instead.
+
 #### Try running the Processing sketch slideshow script at the command line
 Open up a terminal window, navigate to your Processing directory, and enter
 ```
@@ -59,11 +67,3 @@ should comment out your `size` line.
 #### You might want to move your not-yet-working sketches temporarily out of your sketchbook
 If you have any sketches you've started working on, but that just give error messages when you try to run them, yeah, 
 you may want to temporarily move them out of your sketchbook, because that won't look very good in the slideshow. :-)
-
-## What next?
-When I'm back at Idea Fab Labs next week I'll see what new features and changes they would like me to make. I'll 
-probably put in options to choose between cycling through the sketches in directory order (what it does now), in 
-random order, and in alphabetical order; and also have it check for new sketches every so often, instead of requiring 
-a restart to see them as it does now. Also, I had never used/run Processing before this (though I had heard of it), 
-and now I want to do at least one sketch of my own to copy into the IFL sketchbook next week, so I can have some art in 
-the slideshow myself.
