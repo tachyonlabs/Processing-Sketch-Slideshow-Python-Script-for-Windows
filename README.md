@@ -41,7 +41,7 @@ Copy the script [`processing_slideshow.py`](https://github.com/tachyonlabs/Proce
 Run Processing.exe and select `Preferences` in the `File` pull-down menu to copy the location of your sketchbook. Then 
 replace "your sketchbook location here" in this line in the script -- `SKETCHBOOK_DIRECTORY = "your sketchbook location 
 here"` -- with your sketchbook location. Use "/" "forward slashes" in the path as in this example -- 
-"F:/processing-3.3.7/sketchbook" -- not "\" "backslashes".
+"F:/processing-3.3.7/sketchbook" -- not "\\" "backslashes".
 
 #### Configure the sketch display order, if you like
 By default the script displays sketches in random order (good both for variety in general, and also for if you have a 
