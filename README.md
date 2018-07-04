@@ -33,32 +33,33 @@ Because this script is starting and closing instances of Processing to display s
 Processing installed on your computer, you will need to install it, by visiting 
 [https://processing.org/download/](https://processing.org/download/). 
 
-#### Copy the `processing.py` script to your Processing directory
-Copy the script [`processing.py`](https://github.com/tachyonlabs/Processing-Sketch-Slideshow-Python-Script-for-Windows/blob/master/processing.py) from this repo to your Processing directory -- the directory that has the files 
+#### Copy the `processing_slideshow.py` script to your Processing directory
+Copy the script [`processing_slideshow.py`](https://github.com/tachyonlabs/Processing-Sketch-Slideshow-Python-Script-for-Windows/blob/master/processing_slideshow.py) from this repo to your Processing directory -- the directory that has the files 
 `processing.exe` and `processing-java.exe` (among others) in it.
 
 #### Configure the script with the location of your sketchbook
 Run Processing.exe and select `Preferences` in the `File` pull-down menu to copy the location of your sketchbook. Then 
 replace "your sketchbook location here" in this line in the script -- `SKETCHBOOK_DIRECTORY = "your sketchbook location 
-here"` -- with your sketchbook location.
+here"` -- with your sketchbook location. Use "/" "forward slashes" in the path as in this example -- 
+"F:/processing-3.3.7/sketchbook" -- not "\" "backslashes".
 
 #### Configure the sketch display order, if you like
 By default the script displays sketches in random order (good both for variety in general, and also for if you have a 
 bunch of sketches with similar names that are variations of each other), but if you like you can set the 
-`DISPLAY_ORDER` variable to `SORT_ALPHABETICAL_ORDER` or `SORT_DIRECTORY_ORDER` instead.
+`DISPLAY_ORDER` variable to `SORT_ALPHABETICAL_ORDER` instead.
 
 #### Try running the Processing sketch slideshow script at the command line
 Open up a terminal window, navigate to your Processing directory, and enter
 ```
-Python processing.py
+python processing_slideshow.py
 ```
 at the command line. The slideshow will start once Processing starts and runs the first sketch in your sketchbook. Or if 
-you like you can make a desktop shortcut or Windows menu entry to automatically run `Python processing.py` from your 
-Processing directory when you click or select it.
+you like you can make a desktop shortcut or Windows menu entry to automatically run `python processing_slideshow.py` 
+from your Processing directory when you click or select it.
 
 #### You'll probably want to edit your sketches to make them full screen if they aren't already
 IMHO randomly-sized sketches popping up doesn't make for the greatest-looking slideshow. What you would want to do 
-about that depends on whether you're using a 2D or 3D renderer:
+about that depends on whether an individual sketch is using a 2D or 3D renderer:
 * *For a 2D renderer*, the first line below the line `void setup() {` in your sketch should be `fullScreen();`, and you 
 should comment out your `size` line.
 * *For a 3D renderer* (your size statement will have `P3D` after the width and height values), you can't use 
@@ -66,4 +67,5 @@ should comment out your `size` line.
 
 #### You might want to move your not-yet-working sketches temporarily out of your sketchbook
 If you have any sketches you've started working on, but that just give error messages when you try to run them, yeah, 
-you may want to temporarily move them out of your sketchbook, because that won't look very good in the slideshow. :-)
+you may want to temporarily move them out of your sketchbook, because that won't look very good in the slideshow. 
+Ditto for any that haven't moved beyond the, say, white rectangle on a gray background level yet. :-) 
